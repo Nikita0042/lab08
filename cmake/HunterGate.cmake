@@ -122,7 +122,7 @@ function(hunter_gate_self root version sha1 result)
     hunter_gate_internal_error("root is empty")
   endif()
 
-  string(COMPARE EQUAL "${version}" "" is_bad) .
+  string(COMPARE EQUAL "${version}" "" is_bad) 
   if(is_bad)
     hunter_gate_internal_error("version is empty")
   endif()
